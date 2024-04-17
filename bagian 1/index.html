@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Belajar Talwind</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            spacing: {
+              13: "3.25rem",
+            },
+            fontFamily: {
+              inter: ["Inter"],
+            },
+          },
+        },
+      };
+    </script>
+    <!-- <style>
+      * {
+        border: 1px solid red;
+      }
+    </style> -->
+  </head>
+  <body>
+    <h1 class="text-8xl font-bold text-center my-10">
+      Mari Belajar <span class="bg-gradient-to-r from-blue-400 to-teal-300 bg-clip-text text-transparent">TailwindCSS</span>
+    </h1>
+
+    <section
+      class="mb-10 bg-gradient-to-br from-indigo-200 via-sky-200 to-yellow-200"
+    >
+      <h2 class="text-3xl text-center">Spacing</h2>
+      <div class="m-4 bg-red-200">Margin</div>
+      <div class="m-4 py-8 bg-red-200">Padding</div>
+    </section>
+
+    <section class="mb-10 bg-green-200">
+      <h2 class="text-3xl text-center">Sizing</h2>
+      <div class="w-32 h-32 bg-yellow-300">Kotak 1</div>
+    </section>
+
+    <section class="mb-96 font-inter max-w-2xl mx-auto">
+      <h2 class="mb-2 text-3xl font-bold">
+        Belajar Mengenai Typography pada Tailwind CSS
+      </h2>
+      <div class="mb-4 text-gray-500">
+        By
+        <a href="#" class="text-gray-800 font-semibold">Ahmad Fadhliansyah</a>,
+        17 April 2024
+      </div>
+      <p class="mb-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, qui
+        eaque eveniet consectetur sequi, velit placeat blanditiis nostrum unde
+        amet
+        <a href="#" class="underline font-semibold hover:text-blue-500"
+          >perferendis</a
+        >
+        ipsa harum quo modi corrupti vel impedit excepturi. Deleniti.
+      </p>
+      <blockquote class="mb-4 italic font-thin text-xl">
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+        quas aliquid nostrum atque voluptatem nesciunt explicabo facilis
+        temporibus hic placeat?"
+      </blockquote>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+        perspiciatis necessitatibus, eligendi similique provident odit
+        dignissimos quasi repudiandae iure quam ut assumenda rerum aut, sequi
+        harum libero aperiam cum! Ea?
+      </p>
+    </section>
+  </body>
+</html>
